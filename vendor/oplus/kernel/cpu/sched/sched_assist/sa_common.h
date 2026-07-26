@@ -258,9 +258,9 @@ struct oplus_task_struct {
 #endif
 	/* CONFIG_OPLUS_FEATURE_SCHED_SPREAD */
 	int lb_state;
-	int ld_flag:1;
+	unsigned int ld_flag:1;
 	/* CONFIG_OPLUS_FEATURE_TASK_LOAD */
-	int is_update_runtime:1;
+	unsigned int is_update_runtime:1;
 	int target_process;
 	u64 wake_tid;
 	u64 running_start_time;
